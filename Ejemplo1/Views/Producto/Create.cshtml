@@ -1,0 +1,29 @@
+﻿@model Producto
+@{
+    ViewData["Title"] = "Crear Productos";
+}
+
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+  <div class="mb-3">
+    <label>Nombre</label>
+    <input asp-for="Nombre" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label>Descripcion</label>
+    <input asp-for="Descripcion" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label>cantidad</label>
+    <input asp-for="cantidad" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a asp-action="Index" class="btn btn-primary">Regresar</a>
+  </div>
+</form>
+
+<p>Esta es la vista para crear productos.</p>
